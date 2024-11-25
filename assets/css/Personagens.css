@@ -14,9 +14,63 @@ main{
     flex-direction: column;
 }
 
-h1{
+main h1{
     text-align: center;
     margin: 50px;
+}
+
+.titulo-single{
+    
+    margin: 4;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+
+}
+
+.banner-principal{
+    margin: 0 auto;
+    width: 20%;
+    height: 550px;
+    position: relative;
+
+    border-left: 2px solid #146eb4;
+    border-right: 2px solid #ff9900;
+    box-shadow: 1px 2px 5px 2px black;
+    
+}
+
+.banner-single{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+.banner-single p{
+
+    font-size: 58px;
+}
+
+section .overlay{
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.3);
+    position: absolute;
 }
 
 .esquerda{
@@ -78,7 +132,7 @@ h1{
     
 }
 
-.conteudo{
+.conteudoPersonagem{
     width: 50%;
     height: 100%;
 
@@ -86,10 +140,6 @@ h1{
     flex-direction: column;
     justify-content: space-around;
     text-align: justify;
-}
-
-h4{
-
 }
 
 p{
@@ -100,6 +150,10 @@ p{
     
     h1{
         text-align: center;
+    }
+    
+    .banner-principal{
+        display: block;
     }
 
     .esquerda{

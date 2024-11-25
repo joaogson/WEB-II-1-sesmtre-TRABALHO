@@ -1,44 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<main class="Personagens">
 
-<head>
-    <meta name="description" content="Site The Boys">
-    <meta name="keywords" content="The Boys,Personagens">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="assets/css/CabecalhoRodape.css">
-    <link rel="stylesheet" href="assets/css/Personagens.css">
-    <title>Personagens</title>
-</head>
+          <!-- Banner Principal -->
+          <section class="banner-principal">
 
-<body>
+          <h2 class="titulo-single">Temporada 1</h2>
+          <h2 class="titulo-single">Temporada 2</h2>
+          <h2 class="titulo-single">Temporada 3</h2>
+          <h2 class="titulo-single">Temporada 4</h2>
 
-    <!-- --------------------------Cabeçalho-------------------------- -->
-    <header>
-        <img src="assets/img/logo_white.png" alt="LogoTheBoys" class="LogoSite">
+                    <div style="background-image:url('<?php echo INCLUDE_PATH; ?>assets/img/bannerTemp1.jpg')"
+                    class="banner-single">
+                    </div>
+                
+                    <div style="background-image:url('<?php echo INCLUDE_PATH; ?>assets/img/bannerTemp2.jpg')"
+                    class="banner-single">
+                    </div>
 
-        <nav>
-            <div class="w33"><a href="index.html">Pagina Inicial</a></div>
-            <div class="w33"><a href="Formulario.html">Formulario</a></div>
-            <div class="w33"><a href="Personagens.html">Personagens</a></div>
-        </nav>
-        <div class="mobile">
-            <a href="" class="fa-solid fa-bars"></a>
-        </div>
-    </header>
-    <!-- --------------------------Cabeçalho-------------------------- -->
+                    <div style="background-image:url('<?php echo INCLUDE_PATH; ?>assets/img/bannerTemp3.jpg')"
+                    class="banner-single">
+                    </div>       
+                     
+                    <div style="background-image:url('<?php echo INCLUDE_PATH; ?>assets/img/bannerTemp4.jpg')"
+                    class="banner-single">
+                    </div>
+                    
+           
+                
+                <div class="overlay"></div>
+                <!--overlay-->
 
-    <main>
+                <!-- Bullets-->
+                <div class="bullets"></div>
+                <!-- Bullets-->
+
+            </section>
+            <!-- Banner Principal -->
 
         <h1>Personagens</h1>
 
 
         <div class="esquerda">
             <img class="imagemPersonagem" src="assets/img/butcher.jpg" alt="Billy Bruto">
-            <div class="conteudo">
+            <div class="conteudoPersonagem">
                 <h4>William "Billy" Bruto</h4>
                 <h4>Habilidades</h4>
                 <p> Intelecto de nível de gênio, vontade indomável, carisma, fabricação, manipulação, persuasão,
@@ -59,7 +62,7 @@
 
         <div class="direita">
             
-            <div class="conteudo">
+            <div class="conteudoPersonagem">
                 <h4>Hughie Campbell</h4>
                 <h4>Habilidades</h4>
                 <p> Maestria em Armas, maestria Furtiva, preparo.</p>
@@ -77,7 +80,7 @@
 
         <div class="esquerda">
             <img class="imagemPersonagem" src="assets/img/capitao.jpg" alt="Capitão Pátria">
-            <div class="conteudo">
+            <div class="conteudoPersonagem">
                 <h4>Capitão Pátria</h4>
                 <h4>Habilidades</h4>
                 <p> Intelecto, carisma, intimidação, manipulação.</p>
@@ -96,7 +99,7 @@
 
         <div class="direita">
 
-            <div class="conteudo">
+            <div class="conteudoPersonagem">
                 <h4>Luz-Estrela</h4>
                 <h4>Habilidades</h4>
                 <p> Artes Marciais e Acrobacias e influência social.</p>
@@ -115,7 +118,7 @@
 
         <div class="esquerda">
             <img class="imagemPersonagem" src="assets/img/trem.jpg" alt="Trem Bala">
-        <div class="conteudo">
+        <div class="conteudoPersonagem">
             <h4>Trem-Bala</h4>
             <h4>Habilidades</h4>
             <p> Combate corpo-a-corpo.</p>
@@ -132,7 +135,7 @@
 
         <div class="direita">
 
-            <div class="conteudo">
+            <div class="conteudoPersonagem">
                 <h4>Leitinho</h4>
                 <h4>Habilidades</h4>
                 <p> Combate corpo-a-corpo, medicina, inteligência, investigação.</p>
@@ -149,7 +152,7 @@
 
         <div class="esquerda">
             <img class="imagemPersonagem" src="assets/img/frenchie.jpg" alt="Francês">
-            <div class="conteudo">
+            <div class="conteudoPersonagem">
                 <h4>Francês</h4>
                 <h4>Habilidades</h4>
                 <p> Inteligência, investigação, cozinheiro, expert networker, multilinguismo, atirador habilidoso,
@@ -165,7 +168,7 @@
 
         <div class="direita">
 
-            <div class="conteudo">
+            <div class="conteudoPersonagem">
                 <h4>Kimiko Miyashiro</h4>
                 <h4>Habilidades</h4>
                 <p>Combate, intimidação, multilinguismo, atiradora, pico da condição humana.</p>
@@ -182,49 +185,3 @@
         </div>
         
     </main>
-
-
-    <!-- --------------------------Rodapé-------------------------- -->
-    <footer>
-
-        <div class="rodape">
-            <div class="w33">
-                <img class="LogoRodape" src="assets/img/logo_white.png" alt="LogoTheBoys">
-            </div>
-
-            <div class="w33">
-                <h4>Contato</h4>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><a href="https://www.instagram.com/joao.sonalio/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                            </td>
-                            <td>joao.sonalio</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://api.whatsapp.com/send/?phone=42999945270&text&type=phone_number&app_absent=0"
-                                    target="_blank"><i class="fa-brands fa-whatsapp"></i></a></td>
-                            <td>(42)999945270</td>
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
-
-            <div class="w33">
-                <h4>Localização</h4>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.843861908598!2d-51.05014303612233!3d-26.227693068539793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e6602a2f792417%3A0x260a3f120bc90789!2sIFPR%20-%20Campus%20Uni%C3%A3o%20da%20Vit%C3%B3ria!5e0!3m2!1spt-BR!2sbr!4v1725923121642!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-
-    </footer>
-
-    <!-- --------------------------Rodapé-------------------------- -->
-
-</body>
-
-</html>

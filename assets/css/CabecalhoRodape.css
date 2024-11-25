@@ -32,8 +32,10 @@ header{
 }
 
 .LogoSite{
+    display: block;
+    margin: 15px auto;
     width: 350px;
-    margin: 15px;
+
 }
 
 .LogoRodape{

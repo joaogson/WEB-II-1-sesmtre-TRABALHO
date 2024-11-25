@@ -1,0 +1,153 @@
+/*
+Cores:
+
+Cinza escuro #232f3e
+Cinza Claro #2d353f
+Laranja #ff9900
+Azul #146eb4
+Branco #ffffff
+*/
+
+.formulario{
+    width: 100%;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+form{
+    width: 100%;
+    max-width: 40%;
+    height: 350px;
+
+    background-color: #2d353f;
+
+    padding: 20px;
+    
+    gap: 10px;
+
+    border-left: solid 2px #146eb4;
+    border-right: solid 2px #ff9900;
+
+    box-shadow: 1px 2px 5px 2px black;
+
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr .6fr;
+    grid-template-areas: 
+    "Nome Radio"
+    "Poderes Poderes"
+    "Resumo Resumo"
+    "Botao Botao";
+}
+
+
+form label{
+    width: 100%;
+    height: min-content;
+}
+
+form div input {
+    line-height: 25px;
+}
+
+.item{
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.Nome{
+    grid-area: Nome;    
+}
+
+.Radio{
+    grid-area: Radio;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+.BotaoRadio{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.BotaoRadio label{
+    width: min-content;
+}
+
+.Poderes{
+    grid-area: Poderes;
+
+    width: 100%;
+}
+
+.Resumo{
+    grid-area: Resumo
+}
+
+textarea{
+    min-height: 100px;
+}
+
+.Botao{
+    grid-area: Botao;
+    width: 100%;
+    max-width: 30%;
+}
+
+input[type="button"]{
+    min-height: 30px;
+
+    
+    border-color: #ffffff;
+    background-color: #232f3e;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+input[type="button"]:active{
+    background-color: #ffffff;
+}
+
+input[type="button"]:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    form{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Nome"
+        "Radio"
+        "Poderes"
+        "Resumo"
+        "Botao";
+
+        text-align: left;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    
+    form{
+        max-width: 220px;
+    }
+}
