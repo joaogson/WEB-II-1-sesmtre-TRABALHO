@@ -1,0 +1,62 @@
+/* --------------------------Corpo do Texto--------------------------*/
+
+main{
+    margin: 50px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+Cores:
+
+Cinza escuro #232f3e
+Cinza Claro #2d353f
+Laranja #ff9900
+Azul #146eb4
+Branco #ffffff
+*/
+
+section{
+
+    background-color: #2d353f;
+
+    box-shadow: 1px 2px 5px 2px black;
+
+    padding: 35px;
+}
+
+article{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr;
+    justify-items: center;
+    align-items: center
+    
+}
+
+article h1{
+    font-size: 30px;
+}
+
+article p{
+    width: 80%;
+
+    padding: 20px;
+
+    line-height: 23px;
+
+    justify-content: center;
+    text-align: justify;
+
+    border-left: 2px solid #ff9900;
+    border-right: 2px solid #146eb4;
+
+}
+
+/* --------------------------Corpo do Texto--------------------------*/

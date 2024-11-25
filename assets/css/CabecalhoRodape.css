@@ -36,6 +36,10 @@ header{
     margin: 15px;
 }
 
+.LogoRodape{
+    width: 100%;
+}
+
 nav{
     background-color: #2d353f;
 
@@ -48,6 +52,8 @@ nav{
     align-items: center;
 
     border-bottom: 2px solid #ff9900;
+
+    box-shadow: 1px 2px 5px 2px black;
 }
 
 .w33{
@@ -116,18 +122,12 @@ nav div:hover{
 
 /* --------------------------Cabeçalho--------------------------*/
 
-/* --------------------------Corpo do Texto--------------------------*/
-
-section{
-    background-color: #2d353f;
-}
-
-/* --------------------------Corpo do Texto--------------------------*/
 
 /*--------------------------Rodapé--------------------------*/
 
 footer{
 
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -141,6 +141,8 @@ footer{
     justify-content: space-around;
 
     border-top: solid 2px #146eb4;
+
+    box-shadow: 2px 2px 5px 2px black;
 }
 
 footer div{
@@ -178,6 +180,7 @@ tbody{
 }
 
 tr{
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -186,6 +189,19 @@ tr{
 iframe{
     width: 225px;
     height: 225px;
+}
+
+@media screen and (max-width:768px) {
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .w33 table tr{
+        flex-wrap: wrap;
+    }
 }
 
 /*--------------------------Rodapé--------------------------*/
